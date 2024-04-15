@@ -398,5 +398,77 @@ span{
 /* Responsividade */
 
 @media(max-width: 1200px){
+    .header{
+        padding: 2rem 4%;
+    }
+    .home-content h1{
+        font-size: 4.5rem;
+    }
+    .home-content p{
+        font-size: 1.8rem;
+    }
+    .home-content .btn{
+        font-size: 1.8rem;
+    }
+    .sobre-content h2{
+        font-size: 3.5rem;
+    }
+    .sobre-content p{
+        font-size: 1.8rem;
+    }
+    .sobre-content .btn{
+        font-size: 1.8rem;
+    }
+    .servicos h2{
+        font-size: 3.5rem;
+    }
+    .servicos .servicos-content{
+        padding: 2rem 0;
+    }
+    .servicos-box h3{
+        font-size: 2.2rem;
+    }
+    .servicos-box p{
+        font-size: 1.5rem;
+    }
+    .portifolio h2{
+        font-size: 3.5rem;
+    }
+    .portifolio-box h4{
+        font-size: 2.5rem;
+    }
+    .portifolio-box p{
+        font-size: 1.5rem;
+    }
+    .portifolio-box .btn{
+        font-size: 1.5rem;
+    }
+    .contato h2{
+        font-size: 3.5rem;
+    }
+    .contato-content h3{
+        font-size: 2.5rem;
+    }
+    .contato-content p{
+        font-size: 1.5rem;
+    }
+    .contato-content .btn{
+        font-size: 1.5rem;
+    }
+    .footer h2{
+        font-size: 3.5rem;
+    }
+    .footer-content h3{
+        font-size: 2.5rem;
+    }
+    .footer-content p{
+        font-size: 1.5rem;
+    }
+    .footer-content .btn{
+        font-size: 1.5rem;
+    }
+    .footer-content .social a{
+        font-size: 2.5rem;
+    }
     
 }
