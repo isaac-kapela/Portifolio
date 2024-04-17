@@ -30,7 +30,7 @@ export const ServicosContainer = styled.section`
   }
 
   .servicos-box i {
-    font-size: 5rem;
+    font-size: 3rem;
     color: #f1c40f;
   }
 
