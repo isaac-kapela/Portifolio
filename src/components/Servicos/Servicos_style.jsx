@@ -54,6 +54,7 @@ export const ServicosContainer = styled.section`
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.5s ease;
+    cursor: pointer;
   }
 
   /* Modal */

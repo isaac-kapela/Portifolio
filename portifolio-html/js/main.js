@@ -58,10 +58,10 @@
 
 // // ================================================= digitação ================================================================
 
-// const digitei = new Typed('.digitado', {
-//     strings: ['Desenvolvedor Web', 'Desenvolvedor Front-End', 'Desenvolvedor Full-Stack'],
-//     typeSpeed: 80,
-//     backSpeed: 80,
-//     backDelay: 1000, // Corrigido: ajustei a propriedade backDelay
-//     loop: true,
-// });
+const digitei = new Typed('.digitado', {
+    strings: ['Desenvolvedor Web', 'Desenvolvedor Front-End', 'Desenvolvedor Full-Stack'],
+    typeSpeed: 80,
+    backSpeed: 80,
+    backDelay: 1000, // Corrigido: ajustei a propriedade backDelay
+    loop: true,
+});

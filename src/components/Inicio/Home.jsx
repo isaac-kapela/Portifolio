@@ -1,12 +1,47 @@
+import { useEffect } from 'react';
+import Typed from 'typed.js'; // Importe o Typed aqui
 import * as S from './Home_Style';
 import Perfil from '../../assets/profiledp.png';
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Home() {
+  useEffect(() => {
+    const digitei = new Typed('.digitado', {
+      strings: ['Desenvolvedor Web', 'Desenvolvedor Front-End', 'Desenvolvedor Full-Stack'],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 1000,
+      loop: true,
+    });
+    
+    return () => {
+      // Limpe o Typed ao desmontar o componente para evitar vazamento de memória
+      digitei.destroy();
+    };
+  }, []); // O array vazio [] garante que o efeito só será executado uma vez após a montagem do componente
+
   const BaixarCV = () => {
-    const url = '/caminho/para/seu/curriculo.pdf';
-    window.open(url, '_blank');
-  };
+    const url = 'https://pdf.ac/1dFwXL';
+    
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Ocorreu um problema ao baixar o arquivo.');
+            }
+            return response.blob();
+        })
+        .then(blob => {
+            const urlBlob = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = urlBlob;
+            link.setAttribute('download', 'Curriculo-Isaac kapela.pdf');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        })
+        .catch(error => console.error('Erro ao baixar o arquivo:', error));
+};
+
 
   return (
     <S.HomeContainer> 
@@ -14,7 +49,7 @@ export default function Home() {
         <div className="home-content">
           <h3>Olá, eu sou</h3>
           <h1>Isaac Kapela</h1>
-          <h3>E eu sou um <span>desenvolvedor frontend</span></h3>
+          <h3>E eu sou um <span className="digitado"></span></h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem a explicabo laborum harum neque possimus incidunt blanditiis cumque enim eaque quia numquam quo perspiciatis earum at officia, quibusdam ratione architecto.
           </p>
@@ -33,3 +68,4 @@ export default function Home() {
     </S.HomeContainer>
   );
 }
+ 

@@ -26,11 +26,13 @@ export const PortifolioContainer = styled.section`
     box-shadow: 0 0 1rem #f1c40f;
     overflow: hidden;
     display: flex;
+    cursor: pointer;
 }
 
 .portifolio-box img{
         width: 100%;
         transition: .5s ease;
+        
         
 }
 

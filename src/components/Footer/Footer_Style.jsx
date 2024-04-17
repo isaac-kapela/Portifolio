@@ -35,6 +35,7 @@ export const FooterContainer = styled.footer`
 .footer-icon a i{
     font-size: 2.4rem;
     color: #191f36;
+    cursor: pointer;
 }
 
 

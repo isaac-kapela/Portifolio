@@ -56,5 +56,6 @@ export const ContatoContainer = styled.section`
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    cursor: pointer;
 }
 `;
