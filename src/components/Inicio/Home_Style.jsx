@@ -30,6 +30,7 @@ span{
 .home-img img{
     width: 25vw;
     animation: floatImage  4s ease-in-out infinite  ;
+    border-radius: 60%;
 }
 
 @keyframes floatImage {

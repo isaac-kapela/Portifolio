@@ -15,6 +15,8 @@ export const SobreContainer = styled.section`
 
 .img-sobre img{
     width: 35vw;
+    height: 80vh;
+    border-radius: 7rem;
 }
 
 .cabecalho{

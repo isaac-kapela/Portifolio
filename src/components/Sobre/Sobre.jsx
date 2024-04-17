@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import * as S from './Sobre_style';
-// import PERfil2 from "../../assets/aboutpic.png";
+ import Perfil2 from "../../assets/sobre-img.jpg";
 
 export default function Sobre() {
   const [mostrarMaisTexto, setMostrarMaisTexto] = useState(false);
@@ -13,7 +13,7 @@ export default function Sobre() {
     <S.SobreContainer>
       <section className="sobre" id="sobre">
         <div className="img-sobre">
-          {/* <img src={PERfil2} alt="" /> */}
+           <img src={Perfil2} alt="" /> 
         </div>
 
         <div className="sobre-content">
