@@ -86,5 +86,27 @@ export const PortifolioContainer = styled.section`
     color: #191f36;
 }
 
+.btn-container {
+    text-align: center; 
+    margin-top: 4rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #f1c40f;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #f1c40f;
+    font-size: 1.6rem;
+    color: #191f36;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
 `;

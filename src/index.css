@@ -23,6 +23,11 @@ body {
 }
 
 section {
-  min-height: 100vh;
-  padding: 6rem 5% 2rem;
+  min-height: 80vh;
+  padding: 5rem 3% 2rem;
+}
+
+a{
+  text-decoration: none; 
+  color: inherit;
 }
