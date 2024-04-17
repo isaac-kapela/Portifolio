@@ -1,45 +1,99 @@
+import { useState } from 'react';
+import * as S from './Servicos_style';
+import { FaTimes } from "react-icons/fa";
+
+
 export default function Servicos() {
+  const [modalAberto, setModalAberto] = useState(null);
+
+  const handleAbrirModal = (id) => {
+    setModalAberto(id);
+  };
+
+  const handleFecharModal = () => {
+    setModalAberto(null);
+  };
+
   return (
-    <section className="servicos" id="servicos">
-      <h2 className="cabecalho">Meus <span>Serviços</span></h2>
+    <S.ServicosContainer>
+      <section className="servicos" id="servicos">
+        <h2 className="cabecalho">Meus <span>Serviços</span></h2>
 
-      <div className="servicos-container">
-        <div className="servicos-box">
-          <i className="fa-brands fa-figma"></i>
-          <h3>UI/UX Design</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit,
-            nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi
-            molestiae molestias quisquam animi. Debitis reiciendis dolore
-            delectus eaque voluptas maxime accusantium?
-          </p>
-          <a href="" className="btn">Ler Mais</a>
+        <div className="servicos-container">
+          <div className="servicos-box">
+            <i className="fa-brands fa-figma"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit,
+              nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi
+              molestiae molestias quisquam animi. Debitis reiciendis dolore
+              delectus eaque voluptas maxime accusantium?
+            </p>
+            <button className="btn" onClick={() => handleAbrirModal(1)}>Ler Mais</button>
+          </div>
+
+          <div className="servicos-box">
+            <i className="fa-solid fa-laptop-code"></i>
+            <h3>Desenvolvimento Web</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit,
+              nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi
+              molestiae molestias quisquam animi. Debitis reiciendis dolore
+              delectus eaque voluptas maxime accusantium?
+            </p>
+            <button className="btn" onClick={() => handleAbrirModal(2)}>Ler Mais</button>
+          </div>
+
+          <div className="servicos-box">
+            <i className="fa-solid fa-code"></i>
+            <h3>Desenvolvimento Frontend</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit,
+              nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi
+              molestiae molestias quisquam animi. Debitis reiciendis dolore
+              delectus eaque voluptas maxime accusantium?
+            </p>
+            <button className="btn" onClick={() => handleAbrirModal(3)}>Ler Mais</button>
+          </div>
         </div>
 
-        <div className="servicos-box">
-          <i className="fa-solid fa-mobile"></i>
-          <h3>Desenvolvimento Web</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit,
-            nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi
-            molestiae molestias quisquam animi. Debitis reiciendis dolore
-            delectus eaque voluptas maxime accusantium?
-          </p>
-          <a href="" className="btn">Ler Mais</a>
-        </div>
+         {/* Modais */}
+        {modalAberto === 1 && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="fechar" onClick={handleFecharModal}><FaTimes /></span>
+              <h2>Detalhes do Serviço UI/UX Design</h2>
+              <p>
+                Mais informações sobre UI/UX Design...
+              </p>
+            </div>
+          </div>
+        )}
 
-        <div className="servicos-box">
-          <i className="fa-solid fa-code"></i>
-          <h3>Desenvolvimento Web</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit,
-            nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi
-            molestiae molestias quisquam animi. Debitis reiciendis dolore
-            delectus eaque voluptas maxime accusantium?
-          </p>
-          <a href="" className="btn">Ler Mais</a>
-        </div>
-      </div>
-    </section>
+        {modalAberto === 2 && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="fechar" onClick={handleFecharModal}><FaTimes /></span>
+              <h2>Detalhes do Serviço Desenvolvimento Web</h2>
+              <p>
+                Mais informações sobre Desenvolvimento Web...
+              </p>
+            </div>
+          </div>
+        )}
+
+        {modalAberto === 3 && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="fechar" onClick={handleFecharModal}><FaTimes /></span>
+              <h2>Detalhes do Serviço Desenvolvimento Frontend</h2>
+              <p>
+                Mais informações sobre Desenvolvimento Frontend...
+              </p>
+            </div>
+          </div>
+        )}
+      </section>
+    </S.ServicosContainer>
   );
 }

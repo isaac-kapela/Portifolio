@@ -1,8 +1,9 @@
-
+import Sla from "./pages/sla"
 function App() {
 
   return (
     <>
+      <Sla />
       
     </>
   )

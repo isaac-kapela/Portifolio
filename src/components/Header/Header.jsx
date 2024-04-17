@@ -1,6 +1,9 @@
+import * as S from './Header_Style';
 
 export default function Header() {
   return (
+
+    <S.HeaderContainer>
     <header className="header">
       <a href="/" className="logo">Portifolio</a>
       <i className="fa-solid fa-bars" id="menu-icons"></i>
@@ -14,5 +17,6 @@ export default function Header() {
         </ul>
       </nav>
     </header>
+    </S.HeaderContainer>
   );
 }

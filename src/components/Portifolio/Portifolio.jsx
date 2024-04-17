@@ -1,12 +1,15 @@
+import * as S from './Portifolio._Style';
+import IMG1 from "../../assets/IMG-1.jpg";
 
 
 export default function Portfolio() {
   return (
+<S.PortifolioContainer>
     <section className="portifolio" id="portifolio">
       <h2 className="cabecalho">Meus <span>Projetos</span></h2>
       <div className="portifolio-container">
         <div className="portifolio-box">
-          <img src="/assets/IMG-1.jpg" alt="" />
+          <img src={IMG1} alt="" />
           <div className="portifolio-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -15,7 +18,7 @@ export default function Portfolio() {
         </div>
 
         <div className="portifolio-box">
-          <img src="/assets/IMG-1.jpg" alt="" />
+          <img src={IMG1} alt="" />
           <div className="portifolio-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -24,7 +27,7 @@ export default function Portfolio() {
         </div>
 
         <div className="portifolio-box">
-          <img src="/assets/IMG-1.jpg" alt="" />
+          <img src={IMG1} alt="" />
           <div className="portifolio-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -33,7 +36,7 @@ export default function Portfolio() {
         </div>
 
         <div className="portifolio-box">
-          <img src="/assets/IMG-1.jpg" alt="" />
+          <img src={IMG1} alt="" />
           <div className="portifolio-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -42,5 +45,6 @@ export default function Portfolio() {
         </div>
       </div>
     </section>
+    </S.PortifolioContainer>
   );
 }
