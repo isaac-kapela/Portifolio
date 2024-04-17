@@ -47,6 +47,7 @@ span{
 
 .home-content p{
     font-size: 1.6rem;
+    margin-right: 5rem;
 }
 
 .media-social a{

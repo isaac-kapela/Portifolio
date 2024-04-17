@@ -6,10 +6,14 @@ import IMG4 from "../../assets/IMG-sextaM.jpg"
 import IMG5 from "../../assets/IMG-3.jpg";
 import IMG6 from "../../assets/IMG-4.jpg";
 
+import Footer from "../../components/Footer/Footer"
+import NavBar from "../../components/Header/Header"
+
+
 
 import  { useState } from 'react';
 export default function Portfolio() {
-  // Array contendo todos os projetos
+  
   const projetos = [
     {
       nome: 'Designer de Web',
@@ -64,7 +68,9 @@ export default function Portfolio() {
   };
 
   return (
+
     <S.PortifolioContainer>
+        <NavBar/>
       <section className="portifolio" id="portifolio">
         <h2 className="cabecalho">Meus <span>Projetos</span></h2>
         <div className="portifolio-container">
@@ -90,6 +96,7 @@ export default function Portfolio() {
           )}
         </div>
       </section>
+      <Footer/>
     </S.PortifolioContainer>
   );
 }

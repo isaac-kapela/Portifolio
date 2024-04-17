@@ -1,8 +1,11 @@
 import { useEffect } from "react";
 import Typed from "typed.js"; // Importe o Typed aqui
-import * as S from "./Home_Style";
-import Perfil from '../../assets/perfil.jpg';
+import * as S from "./Home_style";
+import Perfil from "../../assets/perfil.jpg";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
+import Footer from "../../components/Footer/Footer"
+import NavBar from "../../components/Header/Header"
+
 
 export default function Home() {
   useEffect(() => {
@@ -48,6 +51,7 @@ export default function Home() {
 
   return (
     <S.HomeContainer>
+        <NavBar/>
       <section className="Home">
         <div className="home-content">
           <h3>Olá, eu sou</h3>
@@ -56,10 +60,10 @@ export default function Home() {
             E eu sou um <span className="digitado"></span>
           </h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem a
-            explicabo laborum harum neque possimus incidunt blanditiis cumque
-            enim eaque quia numquam quo perspiciatis earum at officia, quibusdam
-            ratione architecto.
+            Olá! Sou o Isaac, um apaixonado por tecnologia que encontrou em Juiz
+            de Fora, na Universidade Federal, <br/> o cenário ideal para explorar meu
+            potencial. Nascido em Angola em 2005, trago uma perspectiva única <br/>
+            para o mundo da informática.
           </p>
           <div className="media-social">
             <a
@@ -82,8 +86,11 @@ export default function Home() {
             Baixar meu CV
           </button>
         </div>
-        <div className="home-img"><img src={Perfil} alt="" /></div>
+        <div className="home-img">
+          <img src={Perfil} alt="" />
+        </div>
       </section>
+        <Footer/>
     </S.HomeContainer>
   );
 }

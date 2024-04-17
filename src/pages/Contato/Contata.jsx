@@ -1,5 +1,8 @@
 import  { useState } from 'react';
-import * as S from './Contato_Style';
+import * as S from './Contato_style';
+import Footer from "../../components/Footer/Footer"
+import NavBar from "../../components/Header/Header"
+
 
 export default function Contato() {
   const [formDados, setformDados] = useState({
@@ -35,6 +38,7 @@ export default function Contato() {
 
   return (
     <S.ContatoContainer>
+        <NavBar/>
       <section className="contato" id="contato">
         <h2 className="cabecalho">Meus <span>Contatos</span></h2>
         <form onSubmit={handleEnviar}>
@@ -51,6 +55,7 @@ export default function Contato() {
           <button type="submit" value="Enviar Mensagem" className="btn btn1" >Enviar </button>
         </form>
       </section>
+        <Footer/>
     </S.ContatoContainer>
   );
 }

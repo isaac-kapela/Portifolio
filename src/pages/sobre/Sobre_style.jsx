@@ -36,6 +36,8 @@ export const SobreContainer = styled.section`
 .sobre-content p{
     font-size: 1.6rem;
     margin: 2rem  0 3rem;
+    line-height: 2 
+
 }
 
 .btn{
