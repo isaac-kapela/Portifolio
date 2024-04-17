@@ -11,7 +11,7 @@ export default function Portfolio() {
         <div className="portifolio-box">
           <img src={IMG1} alt="" />
           <div className="portifolio-layer">
-            <h4>Web Design</h4>
+            <h4>Designer de Web</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <i className="fa-solid fa-share-from-square"></i>
           </div>
@@ -20,7 +20,7 @@ export default function Portfolio() {
         <div className="portifolio-box">
           <img src={IMG1} alt="" />
           <div className="portifolio-layer">
-            <h4>Web Design</h4>
+            <h4>Desenvolvimeto front-end</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <i className="fa-solid fa-share-from-square"></i>
           </div>
@@ -29,7 +29,7 @@ export default function Portfolio() {
         <div className="portifolio-box">
           <img src={IMG1} alt="" />
           <div className="portifolio-layer">
-            <h4>Web Design</h4>
+            <h4>Estudos</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <i className="fa-solid fa-share-from-square"></i>
           </div>

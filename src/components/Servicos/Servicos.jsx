@@ -22,17 +22,17 @@ export default function Servicos() {
 
         <div className="servicos-container">
           <div className="servicos-box">
-            <Card icone={<FaFigma />} texto="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi molestiae molestias quisquam animi. Debitis reiciendis dolore delectus eaque voluptas maxime accusantium" />
+            <Card titulo= "UI/UX Design" icone={<FaFigma />} texto="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi molestiae molestias quisquam animi. Debitis reiciendis dolore delectus eaque voluptas maxime accusantium" />
             <button className="btn" onClick={() => handleAbrirModal(1)}>Ler Mais</button>
           </div>
 
           <div className="servicos-box">
-            <Card icone={<FaLaptopCode />} texto="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi molestiae molestias quisquam animi. Debitis reiciendis dolore delectus eaque voluptas maxime accusantium" />
+            <Card titulo="Desenvolvimento Web" icone={<FaLaptopCode />} texto="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi molestiae molestias quisquam animi. Debitis reiciendis dolore delectus eaque voluptas maxime accusantium" />
             <button className="btn" onClick={() => handleAbrirModal(2)}>Ler Mais</button>
           </div>
 
           <div className="servicos-box">
-            <Card icone={<FaCode />} texto="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi molestiae molestias quisquam animi. Debitis reiciendis dolore delectus eaque voluptas maxime accusantium" />
+            <Card titulo=" Desenvolvimento front" icone={<FaCode />} texto="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, nostrum magni voluptate, omnis nemo autem laudantium eligendi quasi molestiae molestias quisquam animi. Debitis reiciendis dolore delectus eaque voluptas maxime accusantium" />
             <button className="btn" onClick={() => handleAbrirModal(3)}>Ler Mais</button>
           </div>
         </div>
