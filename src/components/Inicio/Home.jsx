@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Typed from 'typed.js'; // Importe o Typed aqui
 import * as S from './Home_Style';
-import Perfil from '../../assets/profiledp.png';
+// import Perfil from '../../assets/profiledp.png';
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
   }, []); // O array vazio [] garante que o efeito só será executado uma vez após a montagem do componente
 
   const BaixarCV = () => {
-    const url = 'https://pdf.ac/1dFwXL';
+    const url = 'https://raw.githubusercontent.com/isaac-kapela/Portifolio/main/Curriculo-Isaac%20kapela.pdf';
     
     fetch(url)
         .then(response => {
@@ -62,7 +62,7 @@ export default function Home() {
           <button className="btn" onClick={BaixarCV}>Baixar meu CV</button>
         </div>
         <div className="home-img">
-          <img src={Perfil} alt="" />
+          {/* <img src={Perfil} alt="" /> */}
         </div>
       </section>
     </S.HomeContainer>
