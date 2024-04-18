@@ -51,10 +51,10 @@ export const HeaderContainer = styled.header`
     color: #f1c40f;
   }
   
-      /* #meu-icons {
+       #meu-icons {
       font-size: 3.6rem;
       color: wheat;
       display: none;
-      } */
+      }
   
  `;
