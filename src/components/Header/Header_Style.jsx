@@ -1,11 +1,8 @@
-
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-
-
-/* Header */
-.header {
+  /* Header */
+  .header {
     position: fixed;
     top: 0;
     left: 0;
@@ -34,27 +31,64 @@ export const HeaderContainer = styled.header`
   .navBar ul {
     list-style: none; 
     display: flex;
+    margin: 0;
+    padding: 0;
   }
   
   .navBar ul li {
     margin-left: 2rem; 
   }
   
-  .navBar  a {
+  .navBar a {
     font-size: 1.5rem;
     color: wheat;
     font-weight: 700;
+    text-decoration: none;
   }
   
   .navBar a:hover,
-  .navBar a.active {
+  .navBar a.ativa {
     color: #f1c40f;
   }
-  
-       #meu-icons {
-      font-size: 3.6rem;
-      color: wheat;
-      display: none;
-      }
-  
- `;
+
+  .menu-icon {
+    font-size: 2rem;
+    color: wheat;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navBar {
+      position: fixed;
+      top: 4rem;
+      right: 0;
+      width: 100%;
+      height: calc(30vh - 4rem);
+      background: #111424;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      transition: max-height 0.3s ease-out;
+      max-height: ${props => (props.open ? "500px" : "0")};
+      overflow: hidden;
+    }
+    .navBar ul {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        display: ${props => (props.open ? "flex" : "none")};
+        text-align: center;
+    }
+
+    .navBar ul li {
+      width: 100%; /* Cada li ocupa toda a largura */
+      margin: 1rem 0; /* Adicionando margem vertical */
+    }
+
+    .menu-icon {
+      display: block;
+    }
+  }
+`;

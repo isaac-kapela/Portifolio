@@ -1,24 +1,31 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as S from './Header_Style';
-
+import { MdOutlineMenu } from "react-icons/md";
 
 export default function Header() {
-  return (
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    <S.HeaderContainer>
-    <header className="header">
-      <a href="/" className="logo">Portifolio</a>
-      <i className="fa-solid fa-bars" id="menu-icons"></i>
-      <nav className="navBar">
-        <ul>
-          <li><Link to="/" className="ativa">Home</Link></li>
-          <li><Link to="/Sobre">Sobre</Link></li>
-          <li><Link to="/Servicos">Serviços</Link></li>
-          <li><Link to="/Portifolio">Portifolio</Link></li>
-          <li><Link to="/Contato">Contato</Link></li>
-        </ul>
-      </nav>
-    </header>
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <S.HeaderContainer open={menuOpen}> {/* Adicionando a prop 'open' */}
+      <header className="header">
+        <a href="/" className="logo">Isaac D. kapela joão</a>
+        {/* Usando diretamente o componente MdOutlineMenu */}
+        <MdOutlineMenu className="menu-icon" onClick={toggleMenu} />
+        <nav className={`navBar ${menuOpen ? 'open' : ''}`}>
+          <ul>
+            <li><Link to="/" className="ativa">Home</Link></li>
+            <li><Link to="/Sobre">Sobre</Link></li>
+            <li><Link to="/Servicos">Serviços</Link></li>
+            <li><Link to="/Portifolio">Portfólio</Link></li>
+            <li><Link to="/Contato">Contato</Link></li>
+          </ul>
+        </nav>
+      </header>
     </S.HeaderContainer>
   );
 }

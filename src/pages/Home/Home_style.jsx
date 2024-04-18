@@ -89,4 +89,33 @@ span{
     box-shadow: none;
 }
 
+
+@media (max-width: 768px){
+    .Home{
+        flex-direction: column;
+    }
+
+    .home-content h3{
+        font-size: 2rem;
+    }
+
+    .home-content h1{
+        font-size: 4rem;
+    }
+
+    .home-img img{
+        width: 50vw;
+        margint-top:30px;
+        text-align: center;
+    }
+
+    .home-content p{
+        margin-right: 0;
+    }
+
+    .media-social a{
+        margin: 1rem;
+    }
+}
 `;
+
