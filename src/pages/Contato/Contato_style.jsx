@@ -58,4 +58,21 @@ export const ContatoContainer = styled.section`
     transition: .5s ease;
     cursor: pointer;
 }
+
+
+
+@media (max-width: 768px) {
+    .contato form .input-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato form .input-box input {
+        width: 100%;
+    }
+
+    
+}
 `;
+
+
