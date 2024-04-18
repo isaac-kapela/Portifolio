@@ -107,6 +107,36 @@ export const PortifolioContainer = styled.section`
     justify-content: center;
     align-items: center;
   }
+
+  @media (max-width: 768px){
+    .portifolio-container{
+        grid-template-columns: 1fr;
+    }
+    .portifolio-box img{
+        width: 100%;
+    }
+    .portifolio-box .portifolio-layer{
+        padding: 0 2rem;
+    }
+    .portifolio-box h4{
+        font-size: 2.5rem;
+    }
+    .portifolio-layer p{
+        font-size: 1.4rem;
+    }
+    .portifolio-layer a{
+        width: 4rem;
+        height: 4rem;
+    }
+    .btn{
+        padding: 1rem 2.5rem;
+    }
+
+    .btn-container {
+        margin-top: 2rem;
+      }
+
+}
   
 
 `;
