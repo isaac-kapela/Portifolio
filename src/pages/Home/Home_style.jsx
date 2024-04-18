@@ -105,7 +105,7 @@ span{
 
     .home-img img{
         width: 50vw;
-        margint-top:30px;
+        padding-top: 3rem;
         text-align: center;
     }
 
