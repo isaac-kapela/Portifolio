@@ -23,9 +23,8 @@ export default function Contato() {
     const subject = `Assunto: ${formDados.assunto}`;
     const body = `
       Nome: ${formDados.nome}
-      Email: ${formDados.email}
       Telefone: ${formDados.telefone}
-      Mensagem: ${formDados.mensagem}
+    
     `;
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
       "kapelajoao4@gmail.com"
