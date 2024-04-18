@@ -9,6 +9,7 @@ export const FooterContainer = styled.footer`
     padding: 2rem 9%;
     background: #111424;
     width: 100%;
+    border-radius: 2rem;
   }
 
   .footer-texto {
