@@ -1,4 +1,4 @@
-import { IoIosArrowUp, } from "react-icons/io";
+// import { IoIosArrowUp, } from "react-icons/io";
 import { BsFacebook } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
@@ -29,11 +29,11 @@ export default function Footer() {
 
         </div>
 
-        <div className="footer-icon">
+        {/* <div className="footer-icon">
 
           <a href="#"> <IoIosArrowUp /></a>
 
-        </div>
+        </div> */}
       </footer>
     </S.FooterContainer>
   );
