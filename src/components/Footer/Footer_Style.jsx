@@ -12,6 +12,7 @@ export const FooterContainer = styled.footer`
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: #111424;
+    width: 100%;
 }
 
 .footer-texto{

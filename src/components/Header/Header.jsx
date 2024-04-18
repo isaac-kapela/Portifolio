@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import * as S from './Header_Style';
+
 
 export default function Header() {
   return (
@@ -9,11 +11,11 @@ export default function Header() {
       <i className="fa-solid fa-bars" id="menu-icons"></i>
       <nav className="navBar">
         <ul>
-          <li><a href="/" className="ativa">Home</a></li>
-          <li><a href="/">Sobre</a></li>
-          <li><a href="/">Serviços</a></li>
-          <li><a href="/">Portifolio</a></li>
-          <li><a href="/">Contato</a></li>
+          <li><Link to="/" className="ativa">Home</Link></li>
+          <li><Link to="/Sobre">Sobre</Link></li>
+          <li><Link to="/Servicos">Serviços</Link></li>
+          <li><Link to="/Portifolio">Portifolio</Link></li>
+          <li><Link to="/Contato">Contato</Link></li>
         </ul>
       </nav>
     </header>

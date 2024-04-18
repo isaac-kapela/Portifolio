@@ -1,4 +1,4 @@
-import * as S from './Portifolio._Style';
+import * as S from './Portifolio_style';
 import IMG1 from "../../assets/IMG-1.jpg";
 import IMG2 from "../../assets/IMG-2.jpg";
 import IMG3 from "../../assets/IMG-HAMB.jpg";
