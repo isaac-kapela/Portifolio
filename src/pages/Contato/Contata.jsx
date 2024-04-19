@@ -19,7 +19,7 @@ export default function Contato() {
 
   const handleEnviar = async (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar o formulário
+    
     const subject = `Assunto: ${formDados.assunto}`;
     const body = `
       Nome: ${formDados.nome}

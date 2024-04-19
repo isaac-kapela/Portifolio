@@ -3,7 +3,7 @@ import Typed from "typed.js"; // Importe o Typed aqui
 import * as S from "./Home_style";
 import Perfil from "../../assets/perfil.jpg";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
-import {  AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 
 import Footer from "../../components/Footer/Footer"
@@ -34,11 +34,11 @@ export default function Home() {
       "https://raw.githubusercontent.com/isaac-kapela/Portifolio/main/Curriculo-Isaac%20kapela.pdf";
 
     fetch(url)
-      .then((response) => {
-        if (!response.ok) {
+      .then((resposta) => {
+        if (!resposta.ok) {
           throw new Error("Ocorreu um problema ao baixar o arquivo.");
         }
-        return response.blob();
+        return resposta.blob();
       })
       .then((blob) => {
         const urlBlob = window.URL.createObjectURL(blob);
@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <S.HomeContainer>
-        <NavBar/>
+      <NavBar />
       <section className="Home">
         <div className="home-content">
           <h3>Olá, eu sou</h3>
@@ -64,8 +64,8 @@ export default function Home() {
           </h3>
           <p>
             Olá! Sou o Isaac, um apaixonado por tecnologia que encontrou em Juiz
-            de Fora, na Universidade Federal, <br/> o cenário ideal para explorar meu
-            potencial. Nascido em Angola em 2005, trago uma perspectiva única <br/>
+            de Fora, na Universidade Federal, <br /> o cenário ideal para explorar meu
+            potencial. Nascido em Angola em 2005, trago uma perspectiva única <br />
             para o mundo da informática.
           </p>
           <div className="media-social">
@@ -84,7 +84,7 @@ export default function Home() {
             <a href="https://www.facebook.com/isaac.kapela.1/" target="_blank">
               <FaFacebook />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=5511977848903&text=Olá,%20tudo%20bem?%20Acabei%20de%20ver%20o%20seu%20portfolio,%20gostaria%20de%20falar%20com%20você" target="_blank"><AiOutlineWhatsApp/></a>
+            <a href="https://api.whatsapp.com/send?phone=5511977848903&text=Olá,%20tudo%20bem?%20Acabei%20de%20ver%20o%20seu%20portfolio,%20gostaria%20de%20falar%20com%20você" target="_blank"><AiOutlineWhatsApp /></a>
 
           </div>
           <button className="btn" onClick={BaixarCV}>
@@ -95,7 +95,7 @@ export default function Home() {
           <img src={Perfil} alt="" />
         </div>
       </section>
-        <Footer/>
+      <Footer />
     </S.HomeContainer>
   );
 }

@@ -21,8 +21,8 @@ export default function Sobre() {
         </div>
 
         <div className="sobre-content">
-          <h2 className="cabecalho"></h2>
-          <h3>Programador</h3>
+          <h2 className="cabecalho">Programador</h2>
+          
           <p>
             {mostrarMaisTexto ? (
               "Em cada projeto, busco aplicar o que aprendo para resolver problemas de forma eficiente e criativa. Minha visão vai além das fronteiras, buscando não só contribuir para o avanço da tecnologia em Angola, mas também inspirar uma nova geração de inovadores. Estou pronto para os desafios que o futuro reserva, ansioso para transformar ideias em realidade por meio da tecnologia. Seja bem-vindo à minha jornada rumo a um amanhã digital vibrante e inclusivo."            
