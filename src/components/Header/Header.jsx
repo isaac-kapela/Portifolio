@@ -11,10 +11,10 @@ export default function Header() {
   };
 
   return (
-    <S.HeaderContainer open={menuOpen}> {/* Adicionando a prop 'open' */}
+    <S.HeaderContainer open={menuOpen}>
       <header className="header">
         <a href="/" className="logo">Isaac D. kapela joão</a>
-        {/* Usando diretamente o componente MdOutlineMenu */}
+      
         <MdOutlineMenu className="menu-icon" onClick={toggleMenu} />
         <nav className={`navBar ${menuOpen ? 'open' : ''}`}>
           <ul>

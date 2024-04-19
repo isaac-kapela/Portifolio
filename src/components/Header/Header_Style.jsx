@@ -64,7 +64,7 @@ export const HeaderContainer = styled.header`
       top: 4rem;
       right: 0;
       width: 100%;
-      height: calc(30vh - 2rem);
+      height: calc(35vh - 2rem);
       background: #111424;
       display: flex;
       flex-direction: column;
@@ -72,6 +72,7 @@ export const HeaderContainer = styled.header`
       transition: max-height 0.3s ease-out;
       max-height: ${props => (props.open ? "500px" : "0")};
       overflow: hidden;
+      border-radius: 20px
       
     }
     .navBar ul {
