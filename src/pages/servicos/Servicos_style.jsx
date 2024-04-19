@@ -93,7 +93,22 @@ export const ServicosContainer = styled.section`
     padding: 10px;
     cursor: pointer;
   }
-
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  // .iframe-container {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin-top: 20px; /* Ajuste conforme necessário */
+  // }
+    
   @media screen and (max-width: 768px) {
     .servicos-container .servicos-box {
       flex: 1 1 100%;
