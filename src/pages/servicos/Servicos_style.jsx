@@ -101,14 +101,9 @@ export const ServicosContainer = styled.section`
     gap: 2rem;
     text-align: center;
   }
-  
-  // .iframe-container {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   margin-top: 20px; /* Ajuste conforme necessário */
-  // }
-    
+    .skills-container{
+      margin-top: 5rem;
+    }
   @media screen and (max-width: 768px) {
     .servicos-container .servicos-box {
       flex: 1 1 100%;

@@ -39,7 +39,7 @@ export default function Contato() {
     <S.ContatoContainer>
         <NavBar/>
       <section className="contato" id="contato">
-        <h2 className="cabecalho">Me mande um <span>Email</span></h2>
+        <h2 className="cabecalho">Mande um email pra mim</h2>
         <form onSubmit={handleEnviar}>
           <div className="input-box">
             <input type="text" name="nome" placeholder="Nome" value={formDados.nome} onChange={handleMudanca} required />
