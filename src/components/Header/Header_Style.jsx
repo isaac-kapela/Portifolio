@@ -72,8 +72,8 @@ export const HeaderContainer = styled.header`
       transition: max-height 0.3s ease-out;
       max-height: ${props => (props.open ? "500px" : "0")};
       overflow: hidden;
-      border-radius: 20px
-      
+      border-bottom-radius: 5px
+
     }
     .navBar ul {
         flex-direction: column;
@@ -82,6 +82,8 @@ export const HeaderContainer = styled.header`
         height: 100%;
         display: ${props => (props.open ? "flex" : "none")};
         text-align: center;
+        border: 2px solid #f1c40f;
+        margin-top: 3rem;
     }
     .logo{
         font-size: 2rem;
