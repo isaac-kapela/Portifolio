@@ -4,6 +4,7 @@ import Sobre from "./pages/sobre/Sobre";
 import Servicos from "./pages/servicos/Servicos";
 import Portifolio from "./pages/Portifolio/Portifolio";
 import Contato from "./pages/Contato/Contata"
+import Nao44 from "./pages/404-ERRO/NaoEcontrado"
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
       <Route path="/servicos" element={<Servicos />} />
       <Route path="/portifolio" element={<Portifolio />} />
       <Route path="/contato" element={<Contato />} />
+      <Route path="*" element={<Nao44/>} />
+
      </Routes>
      </BrowserRouter>
 

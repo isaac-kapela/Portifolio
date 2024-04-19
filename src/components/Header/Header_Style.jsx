@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  /* Header */
+
   .header {
     position: fixed;
     top: 0;
