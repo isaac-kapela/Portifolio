@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Typed from "typed.js"; // Importe o Typed aqui
+import Typed from "typed.js";
 import * as S from "./Home_style";
 import Perfil from "../../assets/perfil.jpg";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
@@ -28,7 +28,7 @@ export default function Home() {
       digitei.destroy();
     };
   }, []);
-
+ 
   const BaixarCV = () => {
     const url =
       "https://raw.githubusercontent.com/isaac-kapela/Portifolio/main/Curriculo-Isaac%20kapela.pdf";

@@ -1,10 +1,10 @@
-// import PropTypes from 'prop-types';
+
 import { useState } from "react";
 import * as S from "./Servicos_style";
 import Card from "./Card";
 import { FaTimes, FaFigma, FaLaptopCode, FaCode } from "react-icons/fa";
-import Footer from "../../components/Footer/Footer"
 import NavBar from "../../components/Header/Header"
+import Footer from "../../components/Footer/Footer"
 
 
 export default function Servicos() {
@@ -114,13 +114,7 @@ export default function Servicos() {
     <img style={{ display: 'flex', alignItems: 'flex-start' }} src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="65" height="65" />
     <img src="https://imgur.com/I7Sobjv.gif" width="65" height="65" style={{ backgroundColor: '#191f36', borderRadius: '10px' }} alt="" />
   </div>
-  
-</div>
-
-
-  
-
-        
+</div>        
   </section>
       
       <Footer/>

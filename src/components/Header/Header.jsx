@@ -21,6 +21,7 @@ export default function Header() {
             <li><Link to="/" className="ativa">Home</Link></li>
             <li><Link to="/Sobre">Sobre</Link></li>
             <li><Link to="/Servicos">Serviços</Link></li>
+            <li><Link to="/Formacoes">Formações</Link></li>
             <li><Link to="/Portifolio">Portfólio</Link></li>
             <li><Link to="/Contato">Contato</Link></li>
           </ul>
