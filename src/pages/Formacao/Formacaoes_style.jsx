@@ -106,7 +106,7 @@ export const FormacaoContainer = styled.section`
 
   
   @media screen and (max-width: 768px) {
-    .servicos-container .servicos-box {
+    .formacaoes-container .formacaoes-box {
       flex: 1 1 100%;
     }
 
@@ -119,7 +119,7 @@ export const FormacaoContainer = styled.section`
     }
 
     .formacaoes-box p {
-      font-size: 1.4rem;
+      font-size: 12px;
     }
 
     .formacaoes-box i {
@@ -133,6 +133,8 @@ export const FormacaoContainer = styled.section`
 
     .modal-content {
       padding: 20px;
+      width: 100%;
+      height: 80%;
     }
 
     .formacaoes-container {
