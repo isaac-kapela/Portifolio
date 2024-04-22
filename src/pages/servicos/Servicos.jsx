@@ -112,8 +112,8 @@ export default function Servicos() {
     <img src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png" width="50" height="50" alt="" style={{ backgroundColor: '#191f36', borderRadius: '10px' }} />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="50" height="50" />
     <img style={{ display: 'flex', alignItems: 'flex-start' }} src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="65" height="65" />
-    <img src="https://imgur.com/I7Sobjv.gif" width="65" height="65" style={{ backgroundColor: '#191f36', borderRadius: '10px' }} alt="" />
-  </div>
+    <img src="https://cdn3d.iconscout.com/3d/free/preview/free-tailwind-9294852-7577995.png?f=webp&h=700" alt=""  style={{borderRadius: '20px'}} width="65" height="65"/>
+    <img src="https://imgur.com/I7Sobjv.gif" width="65" height="65" style={{ backgroundColor: '#191f36', borderRadius: '10px' }} alt="" />  </div>
 </div>        
   </section>
       
