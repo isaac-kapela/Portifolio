@@ -101,19 +101,19 @@ export default function Servicos() {
   </h2>
   
   <div className="skills">
-    <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="65" height="65" />
-    <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" />
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" height="45" width="45" />
-    <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" />
-    <img style={{ display: 'flex', alignItems: 'flex-start' }} src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="icon" width="65" height="65" />
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" height="45" width="45" />
-    <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="65" height="65" />
-    <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="65" height="65" />
-    <img src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png" width="50" height="50" alt="" style={{ backgroundColor: '#191f36', borderRadius: '10px' }} />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="50" height="50" />
-    <img style={{ display: 'flex', alignItems: 'flex-start' }} src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="65" height="65" />
-    <img src="https://cdn3d.iconscout.com/3d/free/preview/free-tailwind-9294852-7577995.png?f=webp&h=700" alt=""  style={{borderRadius: '20px'}} width="65" height="65"/>
-    <img src="https://imgur.com/I7Sobjv.gif" width="65" height="65" style={{ backgroundColor: '#191f36', borderRadius: '10px' }} alt="" />  </div>
+  <a href="https://docs.oracle.com/en/java/" target="_blank"> <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="65" height="65"  /> </a>
+   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" /></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" height="45" width="45" /></a>
+   <a href="https://www.typescriptlang.org/docs/" target="_blank"> <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" /></a>
+    <a href="https://nodejs.org/api/documentation.html" target="_blank"><img style={{ display: 'flex', alignItems: 'flex-start' }} src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="icon" width="65" height="65" /></a>
+   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" height="45" width="45" /></a>
+   <a href="https://docs.github.com/pt" target="_blank"> <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="65" height="65" /></a>
+    <a href="https://react.dev/" target="_blank"><img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="65" height="65" /></a>
+   <a href="https://nextjs.org/docs" target="_blank"> <img src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png" width="50" height="50" alt="" style={{ backgroundColor: '#191f36', borderRadius: '10px' }} /></a>
+    <a href="https://angular.io/docs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="50" height="50" /></a>
+   <a href="https://devdocs.io/cpp/" target="_blank" > <img style={{ display: 'flex', alignItems: 'flex-start' }} src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="65" height="65" /> </a>
+   <a href="https://v2.tailwindcss.com/docs" target="_blank"> <img src="https://cdn3d.iconscout.com/3d/free/preview/free-tailwind-9294852-7577995.png?f=webp&h=700" alt=""  style={{borderRadius: '20px'}} width="65" height="65"/></a>
+   <a href="https://styled-components.com/docs" target="_blank"> <img src="https://imgur.com/I7Sobjv.gif" width="65" height="65" style={{ backgroundColor: '#191f36', borderRadius: '10px' }} alt="" /> </a> </div> 
 </div>        
   </section>
       
