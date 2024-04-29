@@ -5,6 +5,7 @@ import IMG3 from "../../assets/IMG-HAMB.jpg";
 import IMG4 from "../../assets/IMG-sextaM.jpg"
 import IMG5 from "../../assets/IMG-3.jpg";
 import IMG6 from "../../assets/IMG-4.jpg";
+import IMG7 from "../../assets/img7.jpg"
 
 import Footer from "../../components/Footer/Footer"
 import NavBar from "../../components/Header/Header"
@@ -16,42 +17,49 @@ export default function Portfolio() {
   
   const projetos = [
     {
-      nome: 'Designer de Web',
+      nome: 'Loja de roupas',
       img: IMG1,
       link: 'https://garimpoanjos.vercel.app/',
-      descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      descricao: 'Desenvolvi usando ele em react é uma loja de roupas .',
     },
     {
-      nome: 'Desenvolvimeto front-end',
+      nome: 'Salão de Beleza',
       img: IMG2,
       link: 'https://github.com/isaac-kapela/Sal-o',
-      descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      descricao: 'Desenvolvi usando html css e js trabalhei como freelancer onde fiz uma landing page de salão de beleza .',
+    },
+    {
+      nome: 'Calendario de eventos',
+      img: IMG7,
+      link: 'https://github.com/isaac-kapela/calendrio-de-Tarefas',
+      descricao: 'Desenvolvi usando react é um calendario onde da para adiconar atrfas e fazer o controles delas.',
     },
     {
       nome:'Loja de produtos naturais',
       img: IMG5,
       link: 'https://github.com/isaac-kapela/Vai_na_web/tree/main/Desafios/Quatro',
-      descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      descricao: 'Desenvolvi usando html e css é uma loja de produtos naturais.',
 
     },
     {
       nome: 'Projeto Burguer King',
       img: IMG3,
       link: 'https://github.com/isaac-kapela/Vai_na_web/tree/main/Modulo%202/Atividades/atividade3',
-      descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      descricao: 'Aqui eu fiz uma landing do Bk usando react.',
     },
     {
       nome: 'Site de Formula 1',
       img: IMG4,
       link: 'https://github.com/isaac-kapela/Sexta-Marcha-Trainee-2023.2',
-      descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      descricao: 'Desenvolvi esse projeto durante um processo trainee em uma empresa junior da faculdade usando html css php e bootstrap.',
     },
     {
       nome: 'Clinica odontologica',
       img: IMG6,
       link: 'https://github.com/isaac-kapela/clinica-odontologica',
-      descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      descricao: 'Desnvolvi em next .',
     },
+
   ];
 
   const [MostrarProjetos, setMostrarProjetos] = useState(2); 
