@@ -20,19 +20,19 @@ export default function Portfolio() {
       nome: 'Loja de roupas',
       img: IMG1,
       link: 'https://garimpoanjos.vercel.app/',
-      descricao: 'Desenvolvi usando ele em react é uma loja de roupas .',
+      descricao: 'Desenvolvi usando ele em react é uma loja de roupas.',
     },
     {
       nome: 'Salão de Beleza',
       img: IMG2,
       link: 'https://github.com/isaac-kapela/Sal-o',
-      descricao: 'Desenvolvi usando html css e js trabalhei como freelancer onde fiz uma landing page de salão de beleza .',
+      descricao: 'Desenvolvi usando html css e js, trabalhei como freelancer onde fiz uma landing page para um salão de beleza.',
     },
     {
       nome: 'Calendario de eventos',
       img: IMG7,
       link: 'https://github.com/isaac-kapela/calendrio-de-Tarefas',
-      descricao: 'Desenvolvi usando react é um calendario onde da para adiconar atrfas e fazer o controles delas.',
+      descricao: 'Desenvolvi usando react é um calendario onde da para adiconar tarefas e fazer o controles delas.',
     },
     {
       nome:'Loja de produtos naturais',

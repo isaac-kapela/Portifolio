@@ -2,14 +2,6 @@
 import { BsFacebook } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
-
-
-
-
-
-
-
-
 import * as S from './Footer_Style';
 
 export default function Footer() {
